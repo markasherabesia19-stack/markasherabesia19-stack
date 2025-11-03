@@ -1,16 +1,16 @@
-## Hi there 👋
+Hello World! 👋
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=Computer+Science+Student;Passionate+Developer;Always+Learning+New+Tech" alt="Typing SVG" />
+</div>
 
-<!--
-**markasherabesia19-stack/markasherabesia19-stack** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+👨‍💻 About Me
 
-Here are some ideas to get you started:
+Hi! I'm Mark Asher G. Abesia (Ash) — a passionate Computer Science student and developer from the Philippines.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🎓 2nd-year BS Computer Science student at UP Tacloban
+
+📈 Always learning and improving through every project I work on
+
+💡 I enjoy creating projects that are functional, fun, and personally meaningful
+
+🔥 I can work both under pressure and without it — but I deliver my best when I’m motivated and inspired
