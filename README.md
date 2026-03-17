@@ -1,18 +1,18 @@
 <h1>Hello World! 👋</h1>
-<h2><strong>Hi! I'm Mark Asher G. Abesia </strong> — a passionate Computer Science student and developer from the Philippines.</h2>
+<h2><strong>Hi! I'm Mark Asher G. Abesia </strong>, a passionate Computer Science student and developer from the Philippines.</h2>
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
-- 🎓 2nd-year BS Computer Science student at **UP Tacloban**
-- 📈 Always learning and improving through every project I work on
-- 💡 I enjoy creating projects that are functional, fun, and personally meaningful
-- 🔥 I can work both under pressure and without it — but I deliver my best when I'm motivated and inspired
+-  2nd-year BS Computer Science student at **UP Tacloban**
+-  Always learning and improving through every project I work on
+-  I enjoy creating projects that are functional, fun, and personally meaningful
+-  I can work both under pressure and without it — but I deliver my best when I'm motivated and inspired
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 ### **Languages**
 <div>
@@ -23,6 +23,7 @@
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
 </div>
 
 ### **Tools & Design**
@@ -40,7 +41,7 @@
 
 ---
 
-## 📫 Let's Connect
+## Let's Connect
 
 <div>
   <a href="https://www.facebook.com/mark.asher"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/></a>
