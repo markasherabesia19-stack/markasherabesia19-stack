@@ -1,5 +1,5 @@
 <h1>Hello World! 👋</h1>
-<h2><strong>Hi! I'm Mark Asher G. Abesia </strong>, a passionate Computer Science student and developer from the Philippines.</h2>
+<h2><strong>Hi! I'm Mark Asher G. Abesia</strong>, a passionate Computer Science student and developer from the Philippines.</h2>
 
 ---
 
