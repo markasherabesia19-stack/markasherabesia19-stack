@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Name Banner -->
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=32&duration=3000&pause=1000&color=00B4FF&center=true&vCenter=true&width=600&lines=Hello+World!+%F0%9F%91%8B;I'm+Mark+Asher+G.+Abesia;CS+Student+%40+UP+Tacloban;Passionate+Developer+%F0%9F%9A%80" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=32&duration=3000&pause=1000&color=00B4FF&center=true&vCenter=true&width=600&lines=Hello+World!+%F0%9F%91%8B;I'm+Mark+Asher+G.+Abesia;CS+Student+%40+UP+Tacloban;Passionate+Developer+%F0%9F%9A%80;Looking+for+Inspiration+%F0%9F%98%89" alt="Typing SVG" />
 
 <!-- Profile Views Badge -->
 <img src="https://komarev.com/ghpvc/?username=markasherabesia19-stack&style=for-the-badge&color=00b4ff&label=PROFILE+VIEWS" alt="Profile Views"/>
@@ -20,7 +20,7 @@
 - 🌱 Always learning and improving through every project I work on
 - 💡 I enjoy creating projects that are functional, fun, and personally meaningful
 - ⚡ I can work both under pressure and without it — but I deliver my best when I'm **motivated and inspired**
-- 📍 Philippines
+- 📍 Sogod, Southern Leyte, Philippines
 
 ---
 
