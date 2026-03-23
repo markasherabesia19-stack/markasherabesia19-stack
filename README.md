@@ -32,7 +32,7 @@
 
 ---
 
-## 🛠️ <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=18&duration=2000&pause=500&color=00B4FF&center=false&vCenter=true&width=80&lines=%3C+%2F+%3E;&repeat=true" style="vertical-align:middle"/> Tech Stack
+## 🛠️ Tech Stack &nbsp; <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=20&duration=1500&pause=300&color=00B4FF&center=false&vCenter=true&width=60&lines=%3C%2F%3E" alt=""/>
 
 <div align="center">
 
@@ -40,7 +40,8 @@
 <img src="https://skillicons.dev/icons?i=cs,java,python,html,css,js,mysql&theme=dark&perline=8" />
 
 ### 〔 🎨 Tools & Design 〕
-<img src="https://skillicons.dev/icons?i=canva,figma&theme=dark&perline=8" />
+<img src="https://skillicons.dev/icons?i=figma&theme=dark&perline=8" />
+<img src="https://img.shields.io/badge/Canva-00C4CC?style=flat-square&logo=canva&logoColor=white&labelColor=0D1117" height="48"/>
 
 ### 〔 ⚙️ Development Tools 〕
 <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark&perline=8" />
@@ -78,6 +79,9 @@
 ## 🌐 Let's Connect
 
 <div align="center">
+
+<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="120" alt="Running cat"/>
+
   <a href="https://www.facebook.com/mark.asher">
     <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
   </a>
