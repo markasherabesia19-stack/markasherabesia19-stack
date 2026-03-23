@@ -27,7 +27,6 @@
 ## 🐱 My Mascot
 
 <div align="center">
-  <!-- Animated brown/white cat like in the profile picture -->
   <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="150" alt="Brown white cat"/>
 </div>
 
@@ -35,29 +34,34 @@
 
 ## 🛠️ Tech Stack
 
-### 💻 Languages
 <div align="center">
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Prolog-742C8D?style=for-the-badge&logo=prolog&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-</div>
 
-### 🎨 Tools & Design
-<div align="center">
-  <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
-</div>
+### 〔 💻 Languages 〕
 
-### ⚙️ Development Tools
-<div align="center">
-  <img src="https://img.shields.io/badge/Git-FE7A16?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white&labelColor=0D1117)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white&labelColor=0D1117)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0D1117)
+![Prolog](https://img.shields.io/badge/Prolog-742C8D?style=flat-square&logo=prolog&logoColor=white&labelColor=0D1117)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&labelColor=0D1117)
+![CSS3](https://img.shields.io/badge/CSS3-00B4FF?style=flat-square&logo=css3&logoColor=white&labelColor=0D1117)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black&labelColor=0D1117)
+![MySQL](https://img.shields.io/badge/MySQL-00B4FF?style=flat-square&logo=mysql&logoColor=white&labelColor=0D1117)
+
+---
+
+### 〔 🎨 Tools & Design 〕
+
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat-square&logo=canva&logoColor=white&labelColor=0D1117)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white&labelColor=0D1117)
+
+---
+
+### 〔 ⚙️ Development Tools 〕
+
+![Git](https://img.shields.io/badge/Git-FE7A16?style=flat-square&logo=git&logoColor=white&labelColor=0D1117)
+![GitHub](https://img.shields.io/badge/GitHub-00B4FF?style=flat-square&logo=github&logoColor=white&labelColor=0D1117)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white&labelColor=0D1117)
+
 </div>
 
 ---
@@ -85,8 +89,6 @@
 ![snake gif](https://github.com/markasherabesia19-stack/markasherabesia19-stack/blob/output/github-contribution-grid-snake-dark.svg)
 
 </div>
-
-> 
 
 ---
 
