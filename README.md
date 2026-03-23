@@ -96,7 +96,7 @@
 
 </div>
 
-> ⚠️ **Note:** To enable the snake animation, you need to set up a GitHub Action in your profile repo. See instructions below!
+> 
 
 ---
 
