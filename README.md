@@ -10,9 +10,9 @@
 
 ---
 
-<table>
-<tr>
-<td valign="top" width="60%">
+<div align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="Coding anime gif"/>
+</div>
 
 ## 🧑‍💻 About Me
 
@@ -21,16 +21,6 @@
 - 💡 I enjoy creating projects that are functional, fun, and personally meaningful
 - ⚡ I can work both under pressure and without it — but I deliver my best when I'm **motivated and inspired**
 - 📍 Philippines
-
-</td>
-<td valign="top" width="40%" align="center">
-
-<!-- Animated Anime GIF on the right (like Merry's profile) -->
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="200" alt="Coding anime gif"/>
-
-</td>
-</tr>
-</table>
 
 ---
 
