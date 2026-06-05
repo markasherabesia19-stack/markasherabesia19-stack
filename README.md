@@ -1,11 +1,9 @@
 <div align="center">
-
 <!-- Animated Name Banner -->
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=32&duration=3000&pause=1000&color=00B4FF&center=true&vCenter=true&width=600&lines=Hello+World!+%F0%9F%91%8B;I'm+Mark+Asher+G.+Abesia;CS+Student+%40+UP+Tacloban;Passionate+Developer+%F0%9F%9A%80;Looking+for+Inspiration+%F0%9F%98%89" alt="Typing SVG" />
 
 <!-- Profile Views Badge -->
 <img src="https://komarev.com/ghpvc/?username=markasherabesia19-stack&style=for-the-badge&color=00b4ff&label=PROFILE+VIEWS" alt="Profile Views"/>
-
 </div>
 
 ---
@@ -32,7 +30,7 @@
 
 ---
 
-##  Skills &nbsp; <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=20&duration=1500&pause=300&color=00B4FF&center=false&vCenter=true&width=60&lines=%3C%2F%3E" alt=""/>
+## Skills &nbsp; <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=20&duration=1500&pause=300&color=00B4FF&center=false&vCenter=true&width=60&lines=%3C%2F%3E" alt=""/>
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=cs,java,python,html,css,js,mysql,figma,git,github,vscode&theme=dark&perline=11" />
@@ -45,7 +43,6 @@
 ## <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="35"/> Let's Connect
 
 <div align="center">
-
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=13&duration=3000&pause=800&color=00B4FF&center=true&vCenter=true&width=400&lines=Feel+free+to+reach+out!+%F0%9F%92%99;Always+open+for+collabs!+%F0%9F%A4%9D;Building+something+cool!+%F0%9F%9A%80" alt="Connect typing"/>
 <br/><br/>
   <a href="https://www.facebook.com/mark.asher">
@@ -57,7 +54,6 @@
   <a href="https://www.linkedin.com/in/mark-asher-abesia/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-
 </div>
 
 ---
@@ -66,21 +62,20 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=markasherabesia19-stack&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=00B4FF&icon_color=00B4FF&text_color=FFFFFF&border_color=00B4FF&border_radius=10&include_all_commits=true&count_private=true" height="165"/>
+<!-- Stats card via GitHub Actions (no external dependency) -->
+<img src="https://github-readme-stats.vercel.app/api?username=markasherabesia19-stack&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=00B4FF&icon_color=00B4FF&text_color=FFFFFF&border_color=00B4FF&border_radius=10&include_all_commits=true&count_private=true" height="165" alt="GitHub Stats"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=markasherabesia19-stack&theme=tokyonight&background=0D1117&border=00B4FF&stroke=00B4FF&ring=00B4FF&fire=FF6B6B&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=00B4FF&sideLabels=00B4FF&dates=888888&border_radius=10" height="165"/>
+<!-- Custom TikTok-style Monthly Streak (generated daily by GitHub Actions) -->
+<img src="./assets/custom-streak.svg" height="165" alt="Monthly Streak"/>
 
 </div>
-
 
 ---
 
 ## 🐍 Contribution Snake
 
 <div align="center">
-
-![snake gif](https://github.com/markasherabesia19-stack/markasherabesia19-stack/blob/output/github-contribution-grid-snake-dark.svg)
-
+  <img src="https://github.com/markasherabesia19-stack/markasherabesia19-stack/blob/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
 </div>
 
 ---
