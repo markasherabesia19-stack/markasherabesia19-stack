@@ -1,0 +1,36 @@
+name: Generate GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # runs every day at midnight UTC
+  workflow_dispatch:        # lets you run it manually too
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate GitHub Stats Card
+        uses: anuraghazra/github-readme-stats@master
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub Stats SVG
+        run: |
+          curl -s "https://github-readme-stats.vercel.app/api?username=markasherabesia19-stack&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=00B4FF&icon_color=00B4FF&text_color=FFFFFF&border_color=00B4FF&border_radius=10&include_all_commits=true&count_private=true" \
+            -o ./assets/stats-card.svg || echo "External service unavailable, using cached"
+
+      - name: Commit SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --staged --quiet || git commit -m "chore: update stats cards [skip ci]"
+          git push
