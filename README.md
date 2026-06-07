@@ -1,24 +1,36 @@
-<div align="center">
-<!-- Animated Name Banner -->
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=32&duration=3000&pause=1000&color=00B4FF&center=true&vCenter=true&width=600&lines=Hello+World!+%F0%9F%91%8B;I'm+Mark+Asher+G.+Abesia;CS+Student+%40+UP+Tacloban;Passionate+Developer+%F0%9F%9A%80;Looking+for+Inspiration+%F0%9F%98%89" alt="Typing SVG" />
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Banner coding gif" width="100%">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Inter&size=48&center=true&vCenter=true&width=500&height=70&color=00B4FF&duration=4000&lines=Hello+World!+👋;+I'm+Mark+Asher!;" />
+</h1>
 
 <!-- Profile Views Badge -->
-<img src="https://komarev.com/ghpvc/?username=markasherabesia19-stack&style=for-the-badge&color=00b4ff&label=PROFILE+VIEWS" alt="Profile Views"/>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=markasherabesia19-stack&style=for-the-badge&color=00b4ff&label=PROFILE+VIEWS" alt="Profile Views"/>
 </div>
 
 ---
 
-<div align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="Coding anime gif"/>
-</div>
-
-## 🧑‍💻 About Me
+### A Computer Science student who enjoys creating projects that are functional, fun, and personally meaningful. I deliver my best when I'm motivated and inspired.
 
 - 🎓 2nd-year BS Computer Science student at **UP Tacloban**
-- 🌱 Always learning and improving through every project I work on
-- 💡 I enjoy creating projects that are functional, fun, and personally meaningful
-- ⚡ I can work both under pressure and without it — but I deliver my best when I'm **motivated and inspired**
+- 🌱 I'm currently learning Data Structures, Algorithms, and Web Development
+- 🔭 I'm currently working on improving my skills through personal projects
+- 😄 Pronouns: he/him
 - 📍 Sogod, Southern Leyte, Philippines
+- 📫 How to reach me:
+
+<div align="center">
+  <a href="https://www.facebook.com/mark.asher" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white" target="_blank" />
+  </a>
+  <a href="https://www.instagram.com/ash_it_was_/?hl=en" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank" />
+  </a>
+  <a href="https://www.linkedin.com/in/mark-asher-abesia/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
+  </a>
+</div>
 
 ---
 
@@ -30,42 +42,23 @@
 
 ---
 
-## Skills &nbsp; <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=20&duration=1500&pause=300&color=00B4FF&center=false&vCenter=true&width=60&lines=%3C%2F%3E" alt=""/>
+## 🛠️ Languages and Tools
 
+<br>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cs,java,python,html,css,js,mysql,figma,git,github,vscode&theme=dark" />
+</p>
+
+<hr>
+
+## ⚡️ Stats
+
+<br>
 <div align="center">
-<img src="https://skillicons.dev/icons?i=cs,java,python,html,css,js,mysql,figma,git,github,vscode&theme=dark&perline=11" />
-<br/>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00B4FF&height=2&width=700" />
+  <img width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=markasherabesia19-stack&theme=transparent&count_private=true&border_radius=10&locale=en" alt="Mark Asher's streak" />
 </div>
 
----
-
-## <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="35"/> Let's Connect
-
-<div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=13&duration=3000&pause=800&color=00B4FF&center=true&vCenter=true&width=400&lines=Feel+free+to+reach+out!+%F0%9F%92%99;Always+open+for+collabs!+%F0%9F%A4%9D;Building+something+cool!+%F0%9F%9A%80" alt="Connect typing"/>
-<br/><br/>
-  <a href="https://www.facebook.com/mark.asher">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
-  </a>
-  <a href="https://www.instagram.com/ash_it_was_/?hl=en">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-  </a>
-  <a href="https://www.linkedin.com/in/mark-asher-abesia/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/markasherabesia19-stack/markasherabesia19-stack/main/assets/stats-card.svg" height="165" alt="GitHub Stats"/>
-  <img src="https://raw.githubusercontent.com/markasherabesia19-stack/markasherabesia19-stack/main/assets/streak-card.svg" height="165" alt="GitHub Streak"/>
-</div>
-
----
+<hr>
 
 ## 🐍 Contribution Snake
 
@@ -73,7 +66,7 @@
   <img src="https://github.com/markasherabesia19-stack/markasherabesia19-stack/blob/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
 </div>
 
----
+<hr>
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=14&duration=4000&pause=500&color=00B4FF&center=true&vCenter=true&width=500&lines=Thanks+for+visiting+my+profile!+%E2%9D%A4%EF%B8%8F%F0%9F%92%99%F0%9F%92%9B;More+tech+advancements+this+year%F0%9F%A4%9E" alt="Footer typing"/>
