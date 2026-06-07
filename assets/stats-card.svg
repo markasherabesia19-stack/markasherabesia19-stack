@@ -1,0 +1,23 @@
+<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117"/>
+      <stop offset="100%" style="stop-color:#161B22"/>
+    </linearGradient>
+  </defs>
+  <rect width="495" height="195" rx="10" fill="url(#bg)" stroke="#00B4FF" stroke-width="1.5"/>
+  <text x="25" y="35" font-family="monospace" font-size="15" fill="#00B4FF" font-weight="bold">markasherabesia19-stack's GitHub Stats</text>
+  <line x1="25" y1="45" x2="470" y2="45" stroke="#21262d" stroke-width="1"/>
+  <text x="25"  y="72"  font-family="monospace" font-size="12" fill="#8b949e">&#11088; Total Stars</text>
+  <text x="25"  y="92"  font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">13</text>
+  <text x="25"  y="118" font-family="monospace" font-size="12" fill="#8b949e">&#128230; Repositories</text>
+  <text x="25"  y="138" font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">5</text>
+  <text x="25"  y="164" font-family="monospace" font-size="12" fill="#8b949e">&#128101; Followers</text>
+  <text x="25"  y="184" font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">20</text>
+  <text x="270" y="72"  font-family="monospace" font-size="12" fill="#8b949e">&#128187; Total Commits</text>
+  <text x="270" y="92"  font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">188</text>
+  <text x="270" y="118" font-family="monospace" font-size="12" fill="#8b949e">&#128256; Pull Requests</text>
+  <text x="270" y="138" font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">1</text>
+  <text x="270" y="164" font-family="monospace" font-size="12" fill="#8b949e">&#128027; Issues Opened</text>
+  <text x="270" y="184" font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">1</text>
+</svg>
