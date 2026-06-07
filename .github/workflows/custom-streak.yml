@@ -1,4 +1,4 @@
-name: Generate Stats & Custom Streak
+name: Generate Stats & Streak Cards
 
 on:
   schedule:
@@ -31,7 +31,7 @@ jobs:
         run: |
           python3 << 'PYEOF'
           import requests, json, os
-          from datetime import datetime, timezone
+          from datetime import datetime, timezone, timedelta
           from collections import defaultdict
 
           username = os.environ["GH_USERNAME"]
@@ -41,7 +41,7 @@ jobs:
             "Content-Type": "application/json"
           }
 
-          # ── Fetch GitHub data via GraphQL ─────────────────────────────────────
+          # ── Fetch GitHub data ─────────────────────────────────────────────────
           query = """
           query($login: String!) {
             user(login: $login) {
@@ -55,6 +55,7 @@ jobs:
                 totalPullRequestContributions
                 totalIssueContributions
                 contributionCalendar {
+                  totalContributions
                   weeks {
                     contributionDays {
                       date
@@ -71,7 +72,7 @@ jobs:
             headers=headers,
             json={"query": query, "variables": {"login": username}}
           )
-          user = res.json()["data"]["user"]
+          user          = res.json()["data"]["user"]
           weeks         = user["contributionsCollection"]["contributionCalendar"]["weeks"]
           total_stars   = sum(r["stargazerCount"] for r in user["repositories"]["nodes"])
           total_repos   = user["repositories"]["totalCount"]
@@ -79,40 +80,42 @@ jobs:
           total_prs     = user["contributionsCollection"]["totalPullRequestContributions"]
           total_issues  = user["contributionsCollection"]["totalIssueContributions"]
           followers     = user["followers"]["totalCount"]
+          total_contribs = user["contributionsCollection"]["contributionCalendar"]["totalContributions"]
 
-          # ── Monthly commit aggregation ────────────────────────────────────────
-          monthly = defaultdict(int)
+          # ── Daily streak (standard: consecutive days with contributions) ───────
+          all_days = {}
           for week in weeks:
             for day in week["contributionDays"]:
-              if day["contributionCount"] > 0:
-                monthly[day["date"][:7]] += day["contributionCount"]
+              all_days[day["date"]] = day["contributionCount"]
 
-          # ── TikTok-style streak: ≥3 commits/month to keep alive ───────────────
-          now   = datetime.now(timezone.utc)
+          now = datetime.now(timezone.utc).date()
           streak = 0
-          year, month = now.year, now.month
-          month -= 1
-          if month == 0:
-            month, year = 12, year - 1
+          longest = 0
+          current = 0
+          check = now
+
+          # if today has no commits yet, start checking from yesterday
+          if all_days.get(str(now), 0) == 0:
+            check = now - timedelta(days=1)
 
           while True:
-            ym = f"{year}-{month:02d}"
-            if monthly.get(ym, 0) >= 3:
+            s = str(check)
+            if all_days.get(s, 0) > 0:
               streak += 1
+              check -= timedelta(days=1)
             else:
               break
-            month -= 1
-            if month == 0:
-              month, year = 12, year - 1
-            if year < now.year - 3:
-              break
 
-          current_ym      = f"{now.year}-{now.month:02d}"
-          current_commits = monthly.get(current_ym, 0)
-          this_month_safe = current_commits >= 3
-          need_more       = max(0, 3 - current_commits)
+          # longest streak
+          temp = 0
+          for d in sorted(all_days):
+            if all_days[d] > 0:
+              temp += 1
+              longest = max(longest, temp)
+            else:
+              temp = 0
 
-          # ── Generate STATS card ───────────────────────────────────────────────
+          # ── STATS card ────────────────────────────────────────────────────────
           stats_svg = f"""<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -123,9 +126,9 @@ jobs:
             <rect width="495" height="195" rx="10" fill="url(#bg)" stroke="#00B4FF" stroke-width="1.5"/>
             <text x="25" y="35" font-family="monospace" font-size="15" fill="#00B4FF" font-weight="bold">{username}'s GitHub Stats</text>
             <line x1="25" y1="45" x2="470" y2="45" stroke="#21262d" stroke-width="1"/>
-            <text x="25"  y="72"  font-family="monospace" font-size="12" fill="#8b949e">&#11088; Total Stars</text>
+            <text x="25"  y="72"  font-family="monospace" font-size="12" fill="#8b949e">&#11088; Total Stars Earned</text>
             <text x="25"  y="92"  font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">{total_stars}</text>
-            <text x="25"  y="118" font-family="monospace" font-size="12" fill="#8b949e">&#128230; Repositories</text>
+            <text x="25"  y="118" font-family="monospace" font-size="12" fill="#8b949e">&#128230; Total Repos</text>
             <text x="25"  y="138" font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">{total_repos}</text>
             <text x="25"  y="164" font-family="monospace" font-size="12" fill="#8b949e">&#128101; Followers</text>
             <text x="25"  y="184" font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">{followers}</text>
@@ -137,11 +140,7 @@ jobs:
             <text x="270" y="184" font-family="monospace" font-size="20" fill="#FFFFFF" font-weight="bold">{total_issues}</text>
           </svg>"""
 
-          # ── Generate STREAK card ──────────────────────────────────────────────
-          fire   = "&#128293;" if streak > 0 else "&#128164;"
-          scolor = "#00FF88" if this_month_safe else "#FFB347"
-          smsg   = "Streak Safe!" if this_month_safe else f"Need {need_more} more commit(s) this month!"
-
+          # ── STREAK card ───────────────────────────────────────────────────────
           streak_svg = f"""<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -150,34 +149,41 @@ jobs:
               </linearGradient>
             </defs>
             <rect width="495" height="195" rx="10" fill="url(#bg2)" stroke="#00B4FF" stroke-width="1.5"/>
-            <text x="247" y="30" font-family="monospace" font-size="13" fill="#00B4FF" text-anchor="middle" font-weight="bold" letter-spacing="2">MONTHLY STREAK</text>
-            <text x="247" y="47" font-family="monospace" font-size="10" fill="#555555" text-anchor="middle">Rule: &gt;= 3 commits/month keeps streak alive</text>
-            <line x1="25" y1="55" x2="470" y2="55" stroke="#21262d" stroke-width="1"/>
-            <text x="247" y="105" font-size="38" text-anchor="middle">{fire}</text>
-            <text x="247" y="143" font-family="monospace" font-size="48" fill="#FFFFFF" text-anchor="middle" font-weight="bold">{streak}</text>
-            <text x="247" y="160" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">consecutive months</text>
-            <line x1="25" y1="168" x2="470" y2="168" stroke="#21262d" stroke-width="1"/>
-            <text x="247" y="183" font-family="monospace" font-size="11" fill="{scolor}" text-anchor="middle">{smsg} ({current_commits}/3 this month)</text>
+
+            <!-- Total contributions (left) -->
+            <text x="100" y="60" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle">Total Contributions</text>
+            <text x="100" y="88" font-family="monospace" font-size="26" fill="#FFFFFF" text-anchor="middle" font-weight="bold">{total_contribs}</text>
+            <text x="100" y="106" font-family="monospace" font-size="10" fill="#555">this year</text>
+
+            <!-- Current streak (center) -->
+            <text x="247" y="48" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle">Current Streak</text>
+            <text x="247" y="105" font-size="34" text-anchor="middle">&#128293;</text>
+            <text x="247" y="143" font-family="monospace" font-size="40" fill="#FFFFFF" text-anchor="middle" font-weight="bold">{streak}</text>
+            <text x="247" y="160" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">days</text>
+
+            <!-- Longest streak (right) -->
+            <text x="395" y="60" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle">Longest Streak</text>
+            <text x="395" y="88" font-family="monospace" font-size="26" fill="#FFFFFF" text-anchor="middle" font-weight="bold">{longest}</text>
+            <text x="395" y="106" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">days</text>
+
+            <!-- dividers -->
+            <line x1="175" y1="30" x2="175" y2="175" stroke="#21262d" stroke-width="1"/>
+            <line x1="320" y1="30" x2="320" y2="175" stroke="#21262d" stroke-width="1"/>
+            <line x1="25"  y1="175" x2="470" y2="175" stroke="#21262d" stroke-width="1"/>
+            <text x="247" y="188" font-family="monospace" font-size="9" fill="#555" text-anchor="middle">Updated daily via GitHub Actions</text>
           </svg>"""
 
           os.makedirs("assets", exist_ok=True)
           with open("assets/stats-card.svg",  "w") as f: f.write(stats_svg)
           with open("assets/streak-card.svg", "w") as f: f.write(streak_svg)
-          with open("assets/streak-state.json", "w") as f:
-            json.dump({
-              "streak_months": streak,
-              "current_month_commits": current_commits,
-              "this_month_safe": this_month_safe,
-              "updated": now.isoformat()
-            }, f, indent=2)
 
-          print(f"Done! Streak={streak} | This month={current_commits}/3 | Safe={this_month_safe}")
+          print(f"Done! Commits={total_commits} | Streak={streak}d | Longest={longest}d")
           PYEOF
 
-      - name: Commit generated SVGs
+      - name: Commit SVGs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/
-          git diff --staged --quiet || git commit -m "chore: update stats & streak cards [skip ci]"
+          git add assets/stats-card.svg assets/streak-card.svg
+          git diff --staged --quiet || git commit -m "chore: update stats & streak [skip ci]"
           git push
