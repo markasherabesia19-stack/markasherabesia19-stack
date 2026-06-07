@@ -61,13 +61,8 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-
-<!-- Stats card via GitHub Actions (no external dependency) -->
-<img src="https://github-readme-stats.vercel.app/api?username=markasherabesia19-stack&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=00B4FF&icon_color=00B4FF&text_color=FFFFFF&border_color=00B4FF&border_radius=10&include_all_commits=true&count_private=true" height="165" alt="GitHub Stats"/>
-
-<!-- Custom TikTok-style Monthly Streak (generated daily by GitHub Actions) -->
-<img src="./assets/custom-streak.svg" height="165" alt="Monthly Streak"/>
-
+  <img src="https://raw.githubusercontent.com/markasherabesia19-stack/markasherabesia19-stack/main/assets/stats-card.svg" height="165" alt="GitHub Stats"/>
+  <img src="https://raw.githubusercontent.com/markasherabesia19-stack/markasherabesia19-stack/main/assets/streak-card.svg" height="165" alt="Monthly Streak"/>
 </div>
 
 ---
