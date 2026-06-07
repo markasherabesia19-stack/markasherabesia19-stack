@@ -62,7 +62,7 @@
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/markasherabesia19-stack/markasherabesia19-stack/main/assets/stats-card.svg" height="165" alt="GitHub Stats"/>
-  <img src="https://raw.githubusercontent.com/markasherabesia19-stack/markasherabesia19-stack/main/assets/streak-card.svg" height="165" alt="Monthly Streak"/>
+  <img src="https://raw.githubusercontent.com/markasherabesia19-stack/markasherabesia19-stack/main/assets/streak-card.svg" height="165" alt="GitHub Streak"/>
 </div>
 
 ---
