@@ -1,31 +1,36 @@
-<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
+<svg width="470" height="195" viewBox="0 0 470 195" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="stbg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0D1117"/>
-      <stop offset="100%" style="stop-color:#161B22"/>
+      <stop offset="100%" style="stop-color:#0d1f2d"/>
     </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="495" height="195" rx="10" fill="url(#bg2)" stroke="#00B4FF" stroke-width="1.5"/>
+  <rect width="470" height="195" rx="12" fill="url(#stbg)" stroke="#00B4FF" stroke-width="1.5"/>
 
-  <!-- Total contributions (left) -->
-  <text x="100" y="60" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle">Total Contributions</text>
-  <text x="100" y="88" font-family="monospace" font-size="26" fill="#FFFFFF" text-anchor="middle" font-weight="bold">523</text>
-  <text x="100" y="106" font-family="monospace" font-size="10" fill="#555">this year</text>
+  <!-- vertical dividers -->
+  <line x1="157" y1="20" x2="157" y2="175" stroke="#1c2d3a" stroke-width="1"/>
+  <line x1="314" y1="20" x2="314" y2="175" stroke="#1c2d3a" stroke-width="1"/>
+  <line x1="20"  y1="175" x2="450" y2="175" stroke="#1c2d3a" stroke-width="1"/>
 
-  <!-- Current streak (center) -->
-  <text x="247" y="48" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle">Current Streak</text>
-  <text x="247" y="105" font-size="34" text-anchor="middle">&#128293;</text>
-  <text x="247" y="143" font-family="monospace" font-size="40" fill="#FFFFFF" text-anchor="middle" font-weight="bold">1</text>
-  <text x="247" y="160" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">days</text>
+  <!-- Total Contributions -->
+  <text x="78" y="55" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle" font-weight="bold">Total Contributions</text>
+  <text x="78" y="105" font-family="monospace" font-size="34" fill="#FFFFFF" text-anchor="middle" font-weight="bold" filter="url(#glow)">524</text>
+  <text x="78" y="125" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">2025-09-16 - Present</text>
 
-  <!-- Longest streak (right) -->
-  <text x="395" y="60" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle">Longest Streak</text>
-  <text x="395" y="88" font-family="monospace" font-size="26" fill="#FFFFFF" text-anchor="middle" font-weight="bold">47</text>
-  <text x="395" y="106" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">days</text>
+  <!-- Current Streak (center, biggest) -->
+  <text x="235" y="40" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle" font-weight="bold">Current Streak</text>
+  <text x="235" y="80" font-size="28" text-anchor="middle">&#128293;</text>
+  <text x="235" y="128" font-family="monospace" font-size="42" fill="#FFFFFF" text-anchor="middle" font-weight="bold" filter="url(#glow)">1</text>
+  <text x="235" y="148" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">Jun 07 - Jun 07</text>
 
-  <!-- dividers -->
-  <line x1="175" y1="30" x2="175" y2="175" stroke="#21262d" stroke-width="1"/>
-  <line x1="320" y1="30" x2="320" y2="175" stroke="#21262d" stroke-width="1"/>
-  <line x1="25"  y1="175" x2="470" y2="175" stroke="#21262d" stroke-width="1"/>
-  <text x="247" y="188" font-family="monospace" font-size="9" fill="#555" text-anchor="middle">Updated daily via GitHub Actions</text>
+  <!-- Longest Streak -->
+  <text x="392" y="55" font-family="monospace" font-size="11" fill="#00B4FF" text-anchor="middle" font-weight="bold">Longest Streak</text>
+  <text x="392" y="105" font-family="monospace" font-size="34" fill="#FFFFFF" text-anchor="middle" font-weight="bold" filter="url(#glow)">47</text>
+  <text x="392" y="125" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">Apr 17 - Jun 02</text>
+
+  <text x="235" y="189" font-family="monospace" font-size="9" fill="#555" text-anchor="middle">Updated daily &#183; GitHub Actions</text>
 </svg>
