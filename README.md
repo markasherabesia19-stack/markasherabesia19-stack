@@ -61,7 +61,7 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=markasherabesia19-stack&theme=tokyonight&background=0D1117&border=00B4FF&stroke=00B4FF&ring=00B4FF&fire=FF6B6B&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=00B4FF&sideLabels=00B4FF&dates=888888&border_radius=10&count_private=true" alt="Mark Asher's streak"/>
+  <img width=390 src="https://streak-stats.demolab.com/?user=markasherabesia19-stack&theme=tokyonight&background=0D1117&border=00B4FF&stroke=00B4FF&ring=00B4FF&fire=FF6B6B&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=00B4FF&sideLabels=00B4FF&dates=888888&border_radius=10&count_private=true" alt="Mark Asher's streak"/>
 </div>
 
 ---
