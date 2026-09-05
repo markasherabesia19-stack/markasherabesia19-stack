@@ -12,7 +12,7 @@
 </div>
 
 ## 🧑‍💻 About Me
-- 🎓 2nd-year BS Computer Science student at **UP Tacloban**
+- 🎓 3rd-year BS Computer Science student at **UP Tacloban**
 - 🌱 Always learning and improving through every project I work on
 - 💡 I enjoy creating projects that are functional, fun, and personally meaningful
 - ⚡ I can work both under pressure and without it — but I deliver my best when I'm **motivated and inspired**
